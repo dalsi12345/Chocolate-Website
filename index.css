@@ -1,0 +1,575 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ /* nav bar */
+ nav {
+     width: 100%;
+     background-color:rgb(85, 78, 65);
+     display: flex;
+     justify-content: space-between;
+     padding: 10px;
+     position: fixed;
+     transform: translatex(-50%);
+     left: 50%;
+     color: white;
+     z-index: 1;
+     box-shadow:1px 2px 4px black ;
+ }
+ 
+ .nav-content {
+     display: flex;
+     gap: 15px;
+     font-size: 25px;
+     padding-top: 7px;
+ 
+ }
+ 
+ .logo {
+     font-family: 'Franklin Gothic Medium';
+     background-image: linear-gradient(pink,purple);
+     background-clip: text;
+     color: transparent;
+     font-size:30px;
+ }
+ 
+ 
+ 
+ .nav-content a {
+     position: relative;
+     text-decoration: none;
+     color:white;
+ }
+ 
+ .nav-content a::after {
+     content: "";
+     position: absolute;
+     height: 2px;
+     width: 0%;
+     left: 0;
+     bottom: 0;
+     background-color:yellow;
+     transition: all 2s;
+     z-index: -1;
+ }
+ 
+ 
+ .nav-content a::before {
+     content: "";
+     position: absolute;
+     height: 2px;
+     width: 0%;
+     right: 0;
+     top: 0;
+     background-color:yellow;
+     transition: all 2s;
+     z-index: -1;
+ }
+ 
+ input:checked~.nav-content {
+     left: 0px
+ }
+ 
+ input {
+     display: none;
+ }
+ 
+ label {
+     display: none;
+ }
+ 
+ .nav-content a:hover::after,
+ a:hover::before {
+     width: 100%;
+ }
+ .twt{
+     /* background-color: white; */
+     color: rgb(95, 95, 223);
+     padding: 5px;
+ }
+ .fb{
+     /* background-color: white; */
+     color: darkblue;
+     padding: 5px;
+ }
+ .you{
+     /* background-color: white; */
+     color: red;
+     padding: 5px;
+ }
+
+ .web1{
+         background-image:url("https://t4.ftcdn.net/jpg/11/88/18/71/360_F_1188187146_JNWdDFXSnVvrel6p4I8NsC7IvjBaeNtn.jpg") ;
+         background-size: cover;
+         width:100%;
+         height:100vh;
+         /* filter: brightness(0.35); */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+        
+ }
+
+ 
+
+ .webcontent{
+                background-color: darkkhaki;
+                width:60%;
+                height:300px;
+                text-align:center;
+                background-image:linear-gradient(rgb(78, 218, 223),rgb(235, 86, 123)) ;
+                background-clip:text ;
+                color:white;
+                font-size:30px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-shadow:3px 3px 5px purple;
+                animation-name:letter;
+                animation-fill-mode: forwards ;
+                animation-duration: 3s;
+                
+ }
+
+ @keyframes letter{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+ }
+
+ .choco{
+          color:yellow;
+ }
+
+ hr{
+      margin-top:15px;
+      width:40%;
+      margin-left:30%;
+ }
+                              
+ .para1{
+         font-size:20px;
+         padding:30px;
+ }
+ 
+ .but1{
+         padding:10px;
+         width:100px;
+         border-radius:10px;
+         border:1px solid black;
+ }
+
+ .web2{
+        background-color:rgb(226, 107, 107);
+        width:100%;
+        height:100vh; 
+        display: flex;
+    }
+
+ .webleft{
+           /* background-color: darkgrey; */
+           width:90%;
+           height:650px;
+           padding:130px;
+           font-size:20px;
+           color:yellow;
+           text-shadow: 4px 5px 6px purple;
+ }
+
+ .webright{
+     /* background-color: rgb(235, 173, 173); */
+     width:100%;
+     height:650px;
+     display: grid;
+     grid-template-columns: auto auto;  
+     gap: 20px 20px; 
+     padding:100px;
+     
+ 
+}
+
+ .para2{
+         font-size:20px;
+         margin-top:10px;
+         color:white;
+         text-shadow: 3px 4px 4px black;
+ }
+
+ .but2{
+         padding:8px;
+         width:35%;
+         font-size:20px;
+         border-radius:10px;
+         border:2px solid black;
+         margin-top:20px;
+         background-color: rgb(50, 14, 83);
+         color:white;
+         border-radius:0px 50px 0px 50px;
+         box-shadow:2px 3px 4px black;
+        
+ }
+
+ .box1{
+         /* background-color:rgb(160, 24, 24) ;  */
+         width:100%;
+         /* height:200px; */
+         animation-name:dal ;
+         position: relative;
+         animation-duration:5s;
+ }
+
+ @keyframes dal{
+    from{right:-300%;}
+    to{right:0;}
+ }
+.pic1{
+       width:100%;
+       height:220px;
+       box-shadow:2px 4px 5px black;
+       border-radius:10px 100px 10px 100px ;
+}
+
+
+
+.web3{
+       background-image:url("https://i.pinimg.com/originals/dc/b7/70/dcb77039ad356d177e456c82d74ce1bc.jpg");
+       background-size: cover;
+       height:100vh;
+       padding:130px;
+      
+       
+}
+
+.our{
+       text-align:center;
+       font-size:50px;
+       color:white;
+     
+     
+}
+
+.icon{
+      font-size:30px;
+      border-radius:50%;
+      border:2px solid black;
+      padding:10px;
+      color:rgb(161, 241, 32);
+      margin-top:30px;
+      margin-left:25%;
+}
+
+.icon:hover{color:white;
+            transform: scale(1.1) ;}
+
+.webicon{
+           font-size:40px;
+           color:rgb(218, 159, 10);
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.webicon:hover{color:chartreuse;
+               font-size:45px;}
+
+.web4{
+     height:100vh;
+     width:100%;
+     background-color:rgb(104, 61, 61);
+     display: grid;
+     grid-template-columns:auto auto auto auto ;
+     justify-content: space-around;
+     padding:7%;
+     gap:70px 30px;
+     
+}
+
+
+
+.circle{
+          width:200px;
+          height:200px;
+          border-radius:50%;
+          box-shadow:2px 3px 4px black;
+        
+}
+
+.rpic:hover{
+               border:5px double yellow;
+               padding:10px;
+               filter:grayscale(0%);
+               transform: scale(1.1);
+             
+}
+
+.rpic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    box-shadow:2px 3px 4px black;
+
+   
+} 
+
+.web5{
+        background-color: rgb(54, 31, 31);
+        height:450px;
+        padding:20px;
+       
+}
+@keyframes webfive {
+    to{
+        transform:scale(1);
+    }
+    
+}
+
+.webclient{
+            width:100%;
+            height:350px;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content:space-between;
+            padding:20px;
+            animation-name: webfive;
+            animation-timeline: view();
+            animation-range-end: 400px;
+            animation-fill-mode: forwards;
+            transform: scale(0.5);
+            transition: all 2s;
+           
+            
+
+}
+
+
+.client{
+         font-size:40px;
+         color: yellow;
+         text-align:center ;
+}
+
+.review{
+          width:400px;
+          height:300px;
+          /* background-color:white ; */
+          padding:20px;
+          text-align:center;
+          color:white;
+}
+
+.repic{
+         width:100px;
+         height:100px;
+         border-radius:50%;
+}
+
+.web6{
+        background-color: rgb(209, 206, 158);
+        height:400px;
+        padding:10px;
+       
+
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .nav-content {
+        background-color: #caf1de;
+        position: fixed;
+        top: 47px;
+        width: 100%;
+        left: 120%;
+        flex-direction: column;
+        height: 40vh;
+        align-items: center;
+      }
+
+    .nav-content a {
+        color: black;
+    }
+
+    .nav-content button {
+        padding: 15px;
+    }
+
+    label {
+        display: block;
+    }
+    .web1{
+           width:100%;
+
+    }
+
+   .webcontent{
+        width:100%;
+        font-size:15px;
+        margin-top:20%;
+        padding:10px;
+        
+     } 
+     .para1{
+           font-size:10px;
+           padding:10px;
+     }
+     .web2{
+         width:100%;
+         height:320vh;
+         padding:0px;
+         flex-direction: column;
+     }
+     .webleft{
+           width:100%;
+           padding:50px;
+           font-size:20px;
+     }
+     .para2{
+           font-size:15px;
+           padding:0px;
+           width:100%;
+     }
+     .webright{
+          width:100%;
+          padding:10px;
+          grid-template-columns: auto;
+     }
+     .box1{
+            width:100%;
+     }
+     .web3{
+        width:100%;
+        padding:10px;
+        font-size:20px;
+     }
+     .icon{
+          font-size:20px;
+     }
+     .webicon{
+           font-size:20px;
+     }
+     .web4{
+          width:100%;
+          height:420vh;
+          grid-template-columns: auto;
+     }
+     .web5{
+        width:100%;
+        height:200vh;
+        padding:5px;
+     }
+     .webclient{
+        width:100%;
+        flex-direction: column;
+        padding:0px;
+     }
+     .web6{
+        width:100%;
+        flex-direction:column ;
+     }
+     iframe{
+        width:100%;
+     }
+    
+
+}
+
+@media only screen and (min-width:600px) and (max-width:900px){
+    .nav-content {
+        background-color: #caf1de;
+        position: fixed;
+        top: 47px;
+        width:100%;
+        left: 100%;
+        flex-direction: column;
+        height: 50vh;
+        align-items: center;
+      }
+
+    .nav-content a {
+        color: black;
+    }
+
+    .nav-content button {
+        padding: 10px;
+    }
+
+    label {
+        display: block;
+    }
+    .web1{
+        width:100%;
+
+ }
+
+.webcontent{
+     width:100%;
+     font-size:20px;
+     margin-top:20%;
+     padding:10px;
+     
+  } 
+  .para1{
+        font-size:20px;
+        padding:10px;
+  }
+  .web2{
+      width:100%;
+      height:200vh;
+      padding:0px;
+      flex-direction: column;
+  }
+  .webleft{
+        width:100%;
+        padding:50px;
+        font-size:30px;
+  }
+  .para2{
+        font-size:25px;
+        padding:0px;
+        width:100%;
+  }
+  .webright{
+       width:100%;
+       padding:10px;
+  }
+  .box1{
+         width:100%;
+  }
+  .web3{
+     width:100%;
+     padding:10px;
+     font-size:30px;
+  }
+  .icon{
+       font-size:30px;
+  }
+  .webicon{
+        font-size:30px;
+  }
+  .web4{
+       width:100%;
+       height:250vh;
+       grid-template-columns: auto auto;
+  }
+  .web5{
+     width:100%;
+     height:200vh;
+     /* padding:5px; */
+     text-align:center;
+  }
+  .webclient{
+     width:100%;
+     flex-direction: column;
+     margin-left:150px;
+  }
+  .web6{
+     width:100%;
+     flex-direction:column ;
+  }
+  iframe{
+     width:100%;
+  }
+
+}
